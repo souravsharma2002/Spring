@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Airtel.java&apos; to &apos;springioc/src/com.sanchit.ioc&apos;&#x0A;- Original project: &apos;springioc&apos;&#x0A;- Destination element: &apos;springioc/src/com.sanchit.ioc&apos;&#x0A;- Original element: &apos;com.sanchit.ioc.Airtel.java&apos;" description="Copy compilation unit" destination="/src&lt;com.sanchit.ioc" element1="/src&lt;com.sanchit.ioc{Airtel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1623484267172" units="1" version="1.0"/>
+</session>

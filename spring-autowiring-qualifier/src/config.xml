@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Automatically wires up the dependencies -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- Here id name should be same as Heart class reference variable for autowiring to work perfectly -->
+    <!-- <bean id="heart" class="com.sanchit.autowired.Heart"/>
+    <bean id="human" class="com.sanchit.autowired.Human" autowire="byName"/> -->
+
+    <!-- If names are different, autowiring possible through byType -->
+    <!-- <bean id="heartObjectValue" class="com.sanchit.autowired.Heart"/>
+    <bean id="human" class="com.sanchit.autowired.Human" autowire="byType"/> -->
+
+    <!-- Dependency injection using Constructor -->
+    <!-- <bean id="heartObjectValue" class="com.sanchit.autowired.Heart"/>
+    <bean id="human" class="com.sanchit.autowired.Human" autowire="constructor"/> -->
+
+    <!-- By using @Autowired -->
+    <context:annotation-config />
+    <bean id="humanHeart" class="com.sanchit.autowired.Heart">
+        <property name="nameOfAnimal" value="Human"/>
+        <property name="noOfHearts" value="1"/>
+    </bean>
+    <bean id="octopusHeart" class="com.sanchit.autowired.Heart">
+        <property name="nameOfAnimal" value="Octopus"/>
+        <property name="noOfHearts" value="3"/>
+    </bean>
+    <bean id="human" class="com.sanchit.autowired.Human"/>
+</beans>
