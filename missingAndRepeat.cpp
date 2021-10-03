@@ -1,5 +1,7 @@
 // { Driver Code Starts
 #include <bits/stdc++.h>
+#define ll long long int
+#define pi pair<int,int>
 
 using namespace std;
 
